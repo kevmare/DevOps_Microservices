@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     
     # get the wikipedia "entity" from the body of the request
     entity = event["entity"]
-    # res = wikipedia.summary(entity, sentences=1) # first sentence, result
+    #res = wikipedia.summary(entity, sentences=1) # first sentence, result
     BAD_REQUEST_STATUS = 400
     ALL_GOOD_STATUS = 200 
     # Exception handling
