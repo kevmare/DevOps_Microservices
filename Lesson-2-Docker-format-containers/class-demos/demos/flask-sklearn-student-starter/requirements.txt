@@ -1,3 +1,2 @@
-Flask==1.0.2
-pandas==0.25.3
-scikit-learn==0.24.2
+click
+pylint
