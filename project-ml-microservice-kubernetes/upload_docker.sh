@@ -6,10 +6,15 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath="kevmare/microservice"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+    docker tag microservice $dockerpath &&\
+    docker images &&\
+    docker login
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
